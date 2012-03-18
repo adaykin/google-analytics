@@ -18,7 +18,6 @@ if(is_admin()) {
 function outputAnalytics()
 {
 	$options = get_option('analytics_code');
-	error_log("Output: " . $options['google_analytics_code']);
 	echo $options['google_analytics_code'];
 }
 
